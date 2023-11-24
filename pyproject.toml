@@ -1,0 +1,32 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "python_template"
+version = "0.1.0"
+description = ""
+authors = ["Joel"]
+repository = "https://github.com/jmicaliz/python_template"
+homepage = "https://github.com/jmicaliz/python_template"
+
+[tool.black]
+line_length = 120
+
+[tool.isort]
+line_length = 120
+profile = 'black'
+
+[tool.poetry.dependencies]
+python = "^3.9.10"
+loguru = "*"
+
+[tool.poetry.dev-dependencies]
+black = "^22.10.0"
+pre-commit = "*"
+isort = "*"
+flake8 = "^5.0.4"
+
+# Entry point for CLI example
+# [tool.poetry.scripts]
+# python_template = "python_template:cli"
